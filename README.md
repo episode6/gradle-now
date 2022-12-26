@@ -3,7 +3,7 @@
 A quickstart repo. The idea is clone it, rename it, update the config and delete what you don't need.
 
 module types to cover:
-[] jvm 
+[] jvm
 [] jvm deployable
 [] android-library
 [] android-library deployable
@@ -13,9 +13,10 @@ module types to cover:
 [] kmp-library-exclusive
 [] kmp-library-exclusive deployable
 [] jetpack compose desktop app (releasable?)
-[] test-support module
+[x] test-support-jvm module
+[x] test-support-kmp module
 
-- Deployable and releasable module types will depend on github secrets for signing. 
+- Deployable and releasable module types will depend on github secrets for signing.
 - Inclusive kmp library requires gradle prop for desired platform support
 - Exclusive kmp library takes optional gradle prop for platforms to exclude (using the same platform support at kotlinx.coroutines)
 - android and desktop apps will have some basic episode6 default dependencies and setup.
