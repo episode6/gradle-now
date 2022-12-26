@@ -10,8 +10,7 @@ class ConfigKmp implements Plugin<Project> {
       plugins.with {
         apply("org.jetbrains.kotlin.multiplatform")
       }
-
-      def skipTargets = findProperty("skipTargets")?.split(",") ?: []
+      def skipTargets = getSkipTargets(project)
 
       kotlin {
         if (!skipTargets.contains("jvm")) {
@@ -74,5 +73,14 @@ class ConfigKmp implements Plugin<Project> {
         }
       }
     }
+  }
+
+  private String[] getSkipTargets(Project project) {
+
+    def onlyTargets = project.findProperty("onlyTargets")?.split(",")
+    if (onlyTargets == null) {
+      return project.findProperty("skipTargets")?.split(",") ?: []
+    }
+    return Config.KmpTargets.all - onlyTargets
   }
 }
