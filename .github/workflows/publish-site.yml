@@ -1,4 +1,4 @@
-name: Publish Library Artifacts
+name: Publish Site
 on:
   push:
     branches:
