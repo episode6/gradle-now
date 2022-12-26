@@ -9,6 +9,12 @@ class Config {
     static JavaVersion sourceCompat = JavaVersion.VERSION_1_8
   }
 
+  class Android {
+    static int compileSdk = 33
+    static int targetSdk = 33
+    static int minSdk = 22
+  }
+
   class Kotlin {
     static String compilerArgs = "-opt-in=kotlin.RequiresOptIn"
   }
