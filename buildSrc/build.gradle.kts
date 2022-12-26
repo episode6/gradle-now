@@ -36,5 +36,9 @@ gradlePlugin {
       id = "config-android-lib"
       implementationClass = "plugins.ConfigAndroidLib"
     }
+    create("ConfigAndroidLibDeployable") {
+      id = "config-android-lib-deploy"
+      implementationClass = "plugins.ConfigAndroidLibDeployable"
+    }
   }
 }
