@@ -1,0 +1,8 @@
+
+theme: jekyll-theme-cayman
+title: Gradle Now Project
+description: Project description goes here
+version: 1.0.0-SNAPSHOT
+docsDir: https://episode6.github.io/gradle-now/docs/main
+kotlinVersion: 1.7.10
+coroutineVersion: 1.6.4
