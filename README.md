@@ -5,7 +5,7 @@ A quickstart repo. The idea is clone it, rename it, update the config and delete
 module types to cover:
 
 - [x] jvm
-- [ ] jvm deployable
+- [x] jvm deployable
 - [ ] android-library
 - [ ] android-library deployable
 - [ ] android app (releasable)

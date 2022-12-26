@@ -12,6 +12,10 @@ gradlePlugin {
       id = "config-jvm"
       implementationClass = "plugins.ConfigJvm"
     }
+    create("ConfigJvmDeployable") {
+      id = "config-jvm-deploy"
+      implementationClass = "plugins.ConfigJvmDeployable"
+    }
     create("ConfigKmp") {
       id = "config-kmp"
       implementationClass = "plugins.ConfigKmp"

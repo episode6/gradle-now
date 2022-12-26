@@ -19,7 +19,7 @@ rootProject.name = "gradle-now"
 
 include(
   ":jvm-lib",
-//  ":jvm-lib-deployable",
+  ":jvm-lib-deployable",
 //  ":android-lib",
 //  ":android-lib-deployable",
 //  ":android-app",
