@@ -12,7 +12,7 @@ module types to cover:
 - [ ] kmp-library-inclusive
 - [ ] kmp-library-inclusive deployable
 - [ ] kmp-library-exclusive
-- [ ] kmp-library-exclusive deployable
+- [x] kmp-library-exclusive deployable
 - [ ] jetpack compose desktop app (releasable?)
 - [ ] command line app
 - [ ] material3 theme module?
