@@ -38,4 +38,11 @@ jobs:
           FOLDER: build/dokka/html
           TARGET_FOLDER: /docs/${{ github.ref_name }}/
           CLEAN: true
-
+      - name: Publish Release to Github
+        uses: softprops/action-gh-release@de2c0eb89ae2a093876385947365aca7b0e5f844
+        if: ${{ github.ref_type == 'tag' }}
+        with:
+          body_path: build/VERSION_CHANGELOG.md
+          append_body: true
+          files: |
+            LICENSE
