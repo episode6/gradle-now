@@ -4,18 +4,18 @@ A quickstart repo. The idea is clone it, rename it, update the config and delete
 
 module types to cover:
 
-[ ] jvm
-[ ] jvm deployable
-[ ] android-library
-[ ] android-library deployable
-[ ] android app (releasable)
-[ ] kmp-library-inclusive
-[ ] kmp-library-inclusive deployable
-[ ] kmp-library-exclusive
-[ ] kmp-library-exclusive deployable
-[ ] jetpack compose desktop app (releasable?)
-[x] test-support-jvm module
-[x] test-support-kmp module
+- [ ] jvm
+- [ ] jvm deployable
+- [ ] android-library
+- [ ] android-library deployable
+- [ ] android app (releasable)
+- [ ] kmp-library-inclusive
+- [ ] kmp-library-inclusive deployable
+- [ ] kmp-library-exclusive
+- [ ] kmp-library-exclusive deployable
+- [ ] jetpack compose desktop app (releasable?)
+- [x] test-support-jvm module
+- [x] test-support-kmp module
 
 - Deployable and releasable module types will depend on github secrets for signing.
 - Inclusive kmp library requires gradle prop for desired platform support
