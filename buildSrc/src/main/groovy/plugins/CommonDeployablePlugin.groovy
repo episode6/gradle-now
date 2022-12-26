@@ -25,13 +25,15 @@ class CommonDeployablePlugin implements Plugin<Project> {
         from tasks.dokkaHtml
       }
 
-      signing {
-        def signingKey = findProperty("signingKey")
-        def signingPassword = findProperty("signingPassword")
-        if (signingKey != null && signingPassword != null) {
-          useInMemoryPgpKeys(signingKey, signingPassword)
+      if (Config.Maven.isReleaseBuild(target)) {
+        signing {
+          def signingKey = findProperty("signingKey")
+          def signingPassword = findProperty("signingPassword")
+          if (signingKey != null && signingPassword != null) {
+            useInMemoryPgpKeys(signingKey, signingPassword)
+          }
+          sign publishing.publications
         }
-        sign publishing.publications
       }
 
       publishing {
