@@ -48,7 +48,7 @@ class Config {
         description: ${project.rootProject.description}
         version: ${project.version}
         docsDir: https://episode6.github.io/gradle-now/docs/${ if (Config.Maven.isReleaseBuild(project)) "v${project.version}" else "main" }
-        kotlinVersion: ${project.libs.versions.kotlin.core.get()}
+        kotlinVersion: ${project.libs.versions.kotlin.get()}
         coroutineVersion: ${project.libs.versions.kotlinx.coroutines.get()}
 """.stripIndent()
     }
