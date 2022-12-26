@@ -8,7 +8,7 @@ on:
 env:
   GRADLE_OPTS: "-Dorg.gradle.jvmargs=-Xmx4g -Dorg.gradle.daemon=false -Dkotlin.incremental=false"
 jobs:
-  publish-job:
+  publish-site-job:
     if: ${{ github.repository == 'episode6/gradle-now' }}
     runs-on: macos-12
     steps:
