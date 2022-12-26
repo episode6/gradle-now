@@ -1,6 +1,8 @@
 $dokka.format:html-v1
 $dokka.linkExtension:html
 
+module:jvm-lib-deployable
+com.episode6.jvmdeploy
 module:kmp-lib-exclusive-deployable
 com.episode6.kmpexclusivedeploy
 module:kmp-lib-inclusive-deployable
