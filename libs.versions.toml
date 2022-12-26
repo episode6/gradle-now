@@ -19,6 +19,7 @@ kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-t
 mockk = { module = "io.mockk:mockk", version.ref = "mockk" }
 mockspresso-api = { module = "com.episode6.mockspresso2:api", version.ref = "mockspresso" }
 mockspresso-core = { module = "com.episode6.mockspresso2:core", version.ref = "mockspresso" }
+mockspresso-plugins-core = { module = "com.episode6.mockspresso2:plugins-core", version.ref = "mockspresso" }
 mockspresso-plugins-junit5 = { module = "com.episode6.mockspresso2:plugins-junit5", version.ref = "mockspresso" }
 mockspresso-plugins-mockk = { module = "com.episode6.mockspresso2:plugins-mockk", version.ref = "mockspresso" }
 mockspresso-plugins-dagger2 = { module = "com.episode6.mockspresso2:plugins-dagger2", version.ref = "mockspresso" }

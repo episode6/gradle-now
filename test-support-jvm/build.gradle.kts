@@ -13,6 +13,7 @@ dependencies {
 
   api(libs.mockspresso.api)
   implementation(libs.mockspresso.core)
+  api(libs.mockspresso.plugins.core)
   api(libs.mockspresso.plugins.junit5)
   api(libs.mockspresso.plugins.mockk)
   api(libs.mockspresso.plugins.dagger2)
