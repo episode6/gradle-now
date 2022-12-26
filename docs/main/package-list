@@ -3,3 +3,5 @@ $dokka.linkExtension:html
 
 module:kmp-lib-exclusive-deployable
 com.episode6.kmpexclusivedeploy
+module:kmp-lib-inclusive-deployable
+com.episode6.kmpinclusivedeploy
