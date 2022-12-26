@@ -15,7 +15,7 @@ dependencyResolutionManagement {
   }
 }
 
-rootProject.name = "redux"
+rootProject.name = "gradle-now"
 
 include(
 //  ":jvm-lib",
@@ -26,7 +26,7 @@ include(
 //  ":kmp-lib-inclusive",
 //  ":kmp-lib-inclusive-deployable",
 //  ":kmp-lib-exclusive",
-//  ":kmp-lib-exclusive-deployable",
+  ":kmp-lib-exclusive-deployable",
 //  ":desktop-app",
   ":test-support-kmp",
   ":test-support-jvm",

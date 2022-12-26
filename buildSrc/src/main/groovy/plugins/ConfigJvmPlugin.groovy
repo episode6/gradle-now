@@ -25,6 +25,7 @@ class ConfigJvmPlugin implements Plugin<Project> {
         testLogging {
           events "passed", "skipped", "failed"
         }
+        useJUnitPlatform()
       }
     }
   }
