@@ -3,7 +3,7 @@ package plugins
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 
-class ConfigKmpAll implements Plugin<Project> {
+class ConfigKmp implements Plugin<Project> {
   @Override
   void apply(Project target) {
     target.with {

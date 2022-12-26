@@ -12,13 +12,13 @@ gradlePlugin {
       id = "config-jvm"
       implementationClass = "plugins.ConfigJvm"
     }
-    create("ConfigKmpAll") {
-      id = "config-kmp-all"
-      implementationClass = "plugins.ConfigKmpAll"
+    create("ConfigKmp") {
+      id = "config-kmp"
+      implementationClass = "plugins.ConfigKmp"
     }
     create("ConfigKmpAllDeployable") {
-      id = "config-kmp-all-deploy"
-      implementationClass = "plugins.ConfigKmpAllDeployable"
+      id = "config-kmp-deploy"
+      implementationClass = "plugins.ConfigKmpDeployable"
     }
   }
 }

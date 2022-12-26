@@ -6,12 +6,12 @@ import org.gradle.api.publish.maven.MavenPublication
 import org.gradle.api.publish.maven.tasks.AbstractPublishToMaven
 import org.gradle.plugins.signing.Sign
 
-class ConfigKmpAllDeployable implements Plugin<Project> {
+class ConfigKmpDeployable implements Plugin<Project> {
   @Override
   void apply(Project target) {
     target.with {
       plugins.with {
-        apply(ConfigKmpAll)
+        apply(ConfigKmp)
         apply(CommonDeployable)
       }
 

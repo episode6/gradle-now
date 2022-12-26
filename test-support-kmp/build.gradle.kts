@@ -1,5 +1,5 @@
 plugins {
-  id("config-kmp-all")
+  id("config-kmp")
 }
 
 kotlin {
@@ -20,4 +20,3 @@ kotlin {
     }
   }
 }
-

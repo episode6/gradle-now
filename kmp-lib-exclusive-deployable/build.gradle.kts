@@ -1,7 +1,7 @@
 description = "Module description goes here."
 
 plugins {
-  id("config-kmp-all-deploy")
+  id("config-kmp-deploy")
 }
 
 kotlin {
