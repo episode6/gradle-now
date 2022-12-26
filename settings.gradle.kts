@@ -18,7 +18,7 @@ dependencyResolutionManagement {
 rootProject.name = "gradle-now"
 
 include(
-//  ":jvm-lib",
+  ":jvm-lib",
 //  ":jvm-lib-deployable",
 //  ":android-lib",
 //  ":android-lib-deployable",
