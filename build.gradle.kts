@@ -1,7 +1,7 @@
 plugins {
   alias(libs.plugins.kmp) apply (false)
   alias(libs.plugins.dokka)
-  alias(libs.plugins.compose-kmp) apply (false)
+  alias(libs.plugins.compose.kmp) apply (false)
   id("config-site")
 }
 
@@ -12,6 +12,6 @@ allprojects {
 description = "Project description goes here"
 
 tasks.wrapper {
-  gradleVersion = libs.versions.gradle.core.get()
+  gradleVersion = libs.versions.gradle.get()
   distributionType = Wrapper.DistributionType.ALL
 }
