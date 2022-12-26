@@ -17,6 +17,13 @@ class ConfigJvm implements Plugin<Project> {
         }
         sourceCompatibility = Config.Jvm.name
       }
+      compileTestKotlin {
+        kotlinOptions {
+          jvmTarget = Config.Jvm.name
+          freeCompilerArgs += Config.Kotlin.compilerArgs
+        }
+        sourceCompatibility = Config.Jvm.name
+      }
       java {
         sourceCompatibility = Config.Jvm.sourceCompat
         targetCompatibility = Config.Jvm.targetCompat
