@@ -24,5 +24,17 @@ gradlePlugin {
       id = "config-kmp-deploy"
       implementationClass = "plugins.ConfigKmpDeployable"
     }
+    create("ConfigAndroidCompose") {
+      id = "config-android-compose"
+      implementationClass = "plugins.ConfigAndroidCompose"
+    }
+    create("ConfigAndroidApp") {
+      id = "config-android-app"
+      implementationClass = "plugins.ConfigAndroidApp"
+    }
+    create("ConfigAndroidLib") {
+      id = "config-android-lib"
+      implementationClass = "plugins.ConfigAndroidLib"
+    }
   }
 }
