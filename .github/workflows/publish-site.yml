@@ -1,0 +1,41 @@
+name: Publish Library Artifacts
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - '**'
+env:
+  GRADLE_OPTS: "-Dorg.gradle.jvmargs=-Xmx4g -Dorg.gradle.daemon=false -Dkotlin.incremental=false"
+jobs:
+  publish-job:
+    if: ${{ github.repository == 'episode6/gradle-now' }}
+    runs-on: macos-12
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up JDK 11
+        uses: actions/setup-java@v3
+        with:
+          java-version: '11'
+          distribution: 'adopt'
+          cache: gradle
+      - name: Sync Docs
+        run: ./gradlew syncDocs
+      - name: Deploy root docs to website
+        if: ${{ github.ref_type == 'tag' }}
+        uses: JamesIves/github-pages-deploy-action@132898c54c57c7cc6b80eb3a89968de8fc283505
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: site
+          FOLDER: build/site
+          TARGET_FOLDER: /
+          CLEAN: false
+      - name: Deploy dokka to website
+        uses: JamesIves/github-pages-deploy-action@132898c54c57c7cc6b80eb3a89968de8fc283505
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: site
+          FOLDER: build/dokka/html
+          TARGET_FOLDER: /docs/${{ github.ref_name }}/
+          CLEAN: true
+
