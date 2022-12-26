@@ -24,7 +24,7 @@ include(
 //  ":android-lib-deployable",
 //  ":android-app",
 //  ":kmp-lib-inclusive",
-//  ":kmp-lib-inclusive-deployable",
+  ":kmp-lib-inclusive-deployable",
 //  ":kmp-lib-exclusive",
   ":kmp-lib-exclusive-deployable",
 //  ":desktop-app",

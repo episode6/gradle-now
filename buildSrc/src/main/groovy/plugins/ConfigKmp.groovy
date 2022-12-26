@@ -75,12 +75,11 @@ class ConfigKmp implements Plugin<Project> {
     }
   }
 
-  private String[] getSkipTargets(Project project) {
-
+  private static String[] getSkipTargets(Project project) {
     def onlyTargets = project.findProperty("onlyTargets")?.split(",")
     if (onlyTargets == null) {
       return project.findProperty("skipTargets")?.split(",") ?: []
     }
-    return Config.KmpTargets.all - onlyTargets
+    return Config.KMPTargets.all - onlyTargets
   }
 }

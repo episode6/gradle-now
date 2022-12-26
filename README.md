@@ -10,7 +10,7 @@ module types to cover:
 - [ ] android-library deployable
 - [ ] android app (releasable)
 - [ ] kmp-library-inclusive
-- [ ] kmp-library-inclusive deployable
+- [x] kmp-library-inclusive deployable
 - [ ] kmp-library-exclusive
 - [x] kmp-library-exclusive deployable
 - [ ] jetpack compose desktop app (releasable?)
