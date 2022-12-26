@@ -6,7 +6,7 @@ import org.gradle.api.Project
 import org.gradle.api.tasks.Copy
 import org.gradle.api.tasks.Delete
 
-class ConfigSitePlugin implements Plugin<Project> {
+class ConfigSite implements Plugin<Project> {
   @Override
   void apply(Project target) {
 

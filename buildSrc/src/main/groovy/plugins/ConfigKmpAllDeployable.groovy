@@ -6,13 +6,13 @@ import org.gradle.api.publish.maven.MavenPublication
 import org.gradle.api.publish.maven.tasks.AbstractPublishToMaven
 import org.gradle.plugins.signing.Sign
 
-class ConfigMultiDeployablePlugin implements Plugin<Project> {
+class ConfigKmpAllDeployable implements Plugin<Project> {
   @Override
   void apply(Project target) {
     target.with {
       plugins.with {
-        apply(ConfigMultiPlugin)
-        apply(CommonDeployablePlugin)
+        apply(ConfigKmpAll)
+        apply(CommonDeployable)
       }
 
       // mitigate gradle warnings by ensuring all pub tasks depend on all sign tasks

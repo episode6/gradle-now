@@ -4,7 +4,7 @@ import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.jvm.tasks.Jar
 
-class CommonDeployablePlugin implements Plugin<Project> {
+class CommonDeployable implements Plugin<Project> {
   @Override void apply(Project target) {
     target.with {
       plugins.with {
