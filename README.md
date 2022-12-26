@@ -14,9 +14,12 @@ module types to cover:
 - [ ] kmp-library-exclusive
 - [ ] kmp-library-exclusive deployable
 - [ ] jetpack compose desktop app (releasable?)
+- [ ] command line app
+- [ ] material3 theme module?
 - [x] test-support-jvm module
 - [x] test-support-kmp module
 
+### notes
 - Deployable and releasable module types will depend on github secrets for signing.
 - Inclusive kmp library requires gradle prop for desired platform support
 - Exclusive kmp library takes optional gradle prop for platforms to exclude (using the same platform support at kotlinx.coroutines)
