@@ -1,4 +1,4 @@
-package com.episode6.kmpinclusivedeploy
+package com.episode6.gradlenow.kmpinclusivedeploy
 
 /**
  * This is a sample class

@@ -1,4 +1,4 @@
-package com.episode6.kmpinclusivedeploy
+package com.episode6.gradlenow.kmpinclusivedeploy
 
 import assertk.assertThat
 import com.episode6.gradlenow.testsupport.MockspressoBuilder
