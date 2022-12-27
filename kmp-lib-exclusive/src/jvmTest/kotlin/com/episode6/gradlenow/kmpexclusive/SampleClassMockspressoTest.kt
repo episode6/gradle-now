@@ -1,10 +1,9 @@
-package com.episode6.jvmdeploy
+package com.episode6.gradlenow.kmpexclusive
 
 import assertk.assertThat
 import com.episode6.gradlenow.testsupport.MockspressoBuilder
 import com.episode6.gradlenow.testsupport.buildExtension
 import com.episode6.gradlenow.testsupport.isHelloWorld
-import com.episode6.jvmdeploy.SampleClass
 import com.episode6.mockspresso2.plugins.core.makeRealObjectsUsingPrimaryConstructor
 import com.episode6.mockspresso2.realImplementation
 import org.junit.jupiter.api.Test

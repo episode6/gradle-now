@@ -1,4 +1,4 @@
-package com.episode6.kmpexclusive
+package com.episode6.gradlenow.kmpexclusive
 
 import assertk.assertThat
 import com.episode6.gradlenow.testsupport.isHelloWorld

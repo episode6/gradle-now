@@ -1,4 +1,4 @@
-package com.episode6.jvmdeploy
+package com.episode6.gradlenow.jvmdeploy
 
 /**
  * This is a sample class

@@ -1,4 +1,4 @@
-package com.episode6.kmpexclusive
+package com.episode6.gradlenow.jvm
 
 /**
  * This is a sample class
