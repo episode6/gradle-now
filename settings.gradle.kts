@@ -21,7 +21,7 @@ rootProject.name = "gradle-now"
 include(
   ":jvm-lib",
   ":jvm-lib-deployable",
-//  ":android-lib",
+  ":android-lib",
 //  ":android-lib-deployable",
 //  ":android-app",
   ":kmp-lib-inclusive",

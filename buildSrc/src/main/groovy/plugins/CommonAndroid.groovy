@@ -2,6 +2,7 @@ package plugins
 
 import org.gradle.api.Plugin
 import org.gradle.api.Project
+import org.gradle.api.tasks.testing.Test
 
 class CommonAndroid implements Plugin<Project> {
 
@@ -27,7 +28,7 @@ class CommonAndroid implements Plugin<Project> {
 
         kotlinOptions {
           jvmTarget = Config.Jvm.name
-          freeCompilerArgs = Config.Ktx.compilerArgs
+          freeCompilerArgs += Config.Kotlin.compilerArgs
         }
 
         packagingOptions {
@@ -35,6 +36,13 @@ class CommonAndroid implements Plugin<Project> {
             excludes += '/META-INF/{AL2.0,LGPL2.1}'
           }
         }
+      }
+
+      tasks.withType(Test) {
+        testLogging {
+          events "passed", "skipped", "failed"
+        }
+        useJUnitPlatform()
       }
     }
   }
