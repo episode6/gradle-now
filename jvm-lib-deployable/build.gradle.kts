@@ -1,3 +1,5 @@
+description = "Module description goes here."
+
 plugins {
   id("config-jvm-deploy")
 }
