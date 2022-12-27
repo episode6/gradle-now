@@ -1,8 +1,10 @@
 plugins {
   alias(libs.plugins.kmp) apply(false)
+  alias(libs.plugins.jvm) apply(false)
   alias(libs.plugins.compose.kmp) apply(false)
   alias(libs.plugins.android.app) apply(false)
   alias(libs.plugins.android.lib) apply(false)
+
   alias(libs.plugins.dokka)
   id("config-site")
 }
