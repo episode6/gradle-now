@@ -6,8 +6,8 @@ module types to cover:
 
 - [x] jvm
 - [x] jvm deployable
-- [ ] android-library
-- [ ] android-library deployable
+- [x] android-library
+- [x] android-library deployable
 - [ ] android app (releasable)
 - [x] kmp-library-inclusive
 - [x] kmp-library-inclusive deployable

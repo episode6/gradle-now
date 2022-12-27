@@ -22,7 +22,7 @@ include(
   ":jvm-lib",
   ":jvm-lib-deployable",
   ":android-lib",
-//  ":android-lib-deployable",
+  ":android-lib-deployable",
 //  ":android-app",
   ":kmp-lib-inclusive",
   ":kmp-lib-inclusive-deployable",
