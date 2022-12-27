@@ -1,4 +1,4 @@
-package com.episode6.kmpinclusive
+package com.episode6.gradlenow.kmpinclusive
 
 /**
  * This is a sample class
