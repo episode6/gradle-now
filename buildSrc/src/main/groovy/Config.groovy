@@ -50,10 +50,10 @@ class Config {
     static String generateJekyllConfig(Project project) {
       return """
         theme: jekyll-theme-cayman
-        title: Gradle Now Project
+        title: GradleNow
         description: ${project.rootProject.description}
         version: ${project.version}
-        docsDir: https://episode6.github.io/gradle-now/docs/${ if (Config.Maven.isReleaseBuild(project)) "v${project.version}" else "main" }
+        docsDir: https://episode6.github.io/gradle-now/docs/${ if (Maven.isReleaseBuild(project)) "v${project.version}" else "main" }
         kotlinVersion: ${project.libs.versions.kotlin.get()}
         coroutineVersion: ${project.libs.versions.kotlinx.coroutines.get()}
 """.stripIndent()
@@ -65,11 +65,11 @@ class Config {
     static void applyPomConfig(Project project, MavenPom pom) {
       pom.with {
         name = project.rootProject.name + "-" + project.name
-        url = "https://github.com/${Config.Maven.projectGHUrl}"
+        url = "https://github.com/${projectGHUrl}"
         licenses {
           license {
             name = "The MIT License (MIT)"
-            url = "https://github.com/${Config.Maven.projectGHUrl}/blob/main/LICENSE"
+            url = "https://github.com/${projectGHUrl}/blob/main/LICENSE"
             distribution = "repo"
           }
         }
@@ -81,8 +81,8 @@ class Config {
         }
         scm {
           url = "extensible"
-          connection = "scm:https://github.com/${Config.Maven.projectGHUrl}.git"
-          developerConnection = "scm:https://github.com/${Config.Maven.projectGHUrl}.git"
+          connection = "scm:https://github.com/${projectGHUrl}.git"
+          developerConnection = "scm:https://github.com/${projectGHUrl}.git"
         }
       }
       project.afterEvaluate {
