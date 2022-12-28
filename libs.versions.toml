@@ -1,6 +1,6 @@
 [versions]
 assertk = "0.25"
-compose-android = "1.3.1"
+compose-android = "1.3.2"
 compose-kmp = "1.3.0-rc01"
 gradle = "7.5.1"
 kotlin = "1.7.10"
@@ -11,6 +11,8 @@ android-gradle = "7.3.0"
 
 [libraries]
 kotlinx-coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
+
+androidx-compose-runtime = { module = "androidx.compose.runtime:runtime", version.ref = "compose-android" }
 
 # test utils
 assertk = { module = "com.willowtreeapps.assertk:assertk", version.ref = "assertk" }

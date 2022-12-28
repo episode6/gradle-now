@@ -9,11 +9,12 @@ plugins {
   id("config-site")
 }
 
+description = "Project description goes here"
+version = self.versions.name.get()
 allprojects {
   group = "com.episode6.gradlenow"
-  version = "1.0.0-SNAPSHOT"
+  version = rootProject.version
 }
-description = "Project description goes here"
 
 tasks.wrapper {
   gradleVersion = libs.versions.gradle.get()

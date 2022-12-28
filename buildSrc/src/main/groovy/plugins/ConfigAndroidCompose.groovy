@@ -13,8 +13,12 @@ class ConfigAndroidCompose implements Plugin<Project> {
         }
 
         composeOptions {
-          kotlinCompilerExtensionVersion = libs.versions.compose.core.get()
+          kotlinCompilerExtensionVersion = libs.versions.compose.android.get()
         }
+      }
+
+      dependencies {
+        implementation libs.androidx.compose.runtime
       }
     }
   }

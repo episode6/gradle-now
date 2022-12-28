@@ -13,6 +13,7 @@ dependencyResolutionManagement {
   }
   versionCatalogs {
     create("libs") { from(files("libs.versions.toml")) }
+    create("self") { from(files("self.versions.toml")) }
   }
 }
 
@@ -23,7 +24,7 @@ include(
   ":jvm-lib-deployable",
   ":android-lib",
   ":android-lib-deployable",
-//  ":android-app",
+  ":android-app",
   ":kmp-lib-inclusive",
   ":kmp-lib-inclusive-deployable",
   ":kmp-lib-exclusive",

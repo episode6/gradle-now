@@ -12,6 +12,11 @@ class ConfigAndroidApp implements Plugin<Project> {
         apply(CommonAndroid)
       }
       android {
+        defaultConfig {
+          versionCode = self.versions.number.get()
+          versionName = self.versions.name.get()
+        }
+
         signingConfigs {
           release {
             keyAlias "signing"
