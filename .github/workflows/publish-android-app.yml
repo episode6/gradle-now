@@ -39,4 +39,4 @@ jobs:
         if: ${{ github.ref_type == 'tag' }}
         with:
           files: |
-            android-app/build/outputs/apk/release/app-release.apk
+            android-app/build/outputs/apk/release/android-app-release.apk
