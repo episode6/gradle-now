@@ -27,6 +27,8 @@ jobs:
 
     - name: Assemble Project
       run: ./gradlew assemble
+      env:
+        ORG_GRADLE_PROJECT_androidSigningKeyPassword: ${{ secrets.ANDROID_SIGNING_KEY_PASSWORD }}
 
     - name: Cleanup Keystore
       if: ${{ always() }}
