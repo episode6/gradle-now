@@ -32,5 +32,12 @@ jobs:
       if: ${{ always() }}
       run: rm -f keystore.jks
 
+    - name: Upload Android App APK
+      uses: actions/upload-artifact@v3
+      with:
+        name: build-outputs
+        path: android-app/build/outputs/
+        retention-days: 7
+
     - name: Check Project
       run: ./gradlew check
