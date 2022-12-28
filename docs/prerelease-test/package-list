@@ -1,5 +1,11 @@
 $dokka.format:html-v1
 $dokka.linkExtension:html
 
+module:android-lib-deployable
+com.episode6.gradlenow.androiddeploy
+module:jvm-lib-deployable
+com.episode6.gradlenow.jvmdeploy
 module:kmp-lib-exclusive-deployable
-com.episode6.kmpexclusivedeploy
+com.episode6.gradlenow.kmpexclusivedeploy
+module:kmp-lib-inclusive-deployable
+com.episode6.gradlenow.kmpinclusivedeploy
