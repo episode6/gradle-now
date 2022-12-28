@@ -28,6 +28,7 @@ class ConfigAndroidApp implements Plugin<Project> {
 
         buildTypes {
           release {
+            minifyEnabled = true
             signingConfig signingConfigs.release
           }
         }

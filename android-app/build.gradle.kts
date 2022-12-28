@@ -5,16 +5,9 @@ plugins {
 
 android {
   namespace = "com.episode6.gradlenow.app"
-  defaultConfig {
-    applicationId = namespace
-  }
-
-
-  buildTypes {
-    getByName("release") {
-      isMinifyEnabled = true
-    }
-  }
+//  defaultConfig {
+//    applicationId = namespace
+//  }
 }
 
 dependencies {
