@@ -8,7 +8,7 @@ android {
 }
 
 dependencies {
-  implementation(libs.bundles.corestack.android.app)
+  implementation(libs.bundles.corestack)
 
   testImplementation(project(":test-support"))
 }

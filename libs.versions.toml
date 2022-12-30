@@ -43,6 +43,3 @@ kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 corestack = [
     "kotlinx-coroutines",
 ]
-corestack-android-app = [
-    "kotlinx-coroutines",
-]
