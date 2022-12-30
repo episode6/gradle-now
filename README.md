@@ -16,8 +16,7 @@ module types to cover:
 - [ ] jetpack compose desktop app (releasable?)
 - [ ] command line app
 - [ ] material3 theme module?
-- [x] test-support-jvm module
-- [x] test-support-kmp module
+- [x] test-support module
 
 ### notes
 - Deployable and releasable module types will depend on github secrets for signing.

@@ -5,5 +5,5 @@ plugins {
 dependencies {
   implementation(libs.kotlinx.coroutines)
 
-  testImplementation(project(":test-support-jvm"))
+  testImplementation(project(":test-support"))
 }
