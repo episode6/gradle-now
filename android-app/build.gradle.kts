@@ -8,7 +8,7 @@ android {
 }
 
 dependencies {
-  implementation(libs.kotlinx.coroutines)
+  implementation(libs.bundles.corestack.android.app)
 
   testImplementation(project(":test-support"))
 }

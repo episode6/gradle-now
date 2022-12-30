@@ -38,3 +38,11 @@ jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 kapt = { id = "org.jetbrains.kotlin.kotlin", version.ref = "kotlin" }
 kmp = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+
+[bundles]
+corestack = [
+    "kotlinx-coroutines",
+]
+corestack-android-app = [
+    "kotlinx-coroutines",
+]
