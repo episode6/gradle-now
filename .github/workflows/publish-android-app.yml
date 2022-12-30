@@ -19,22 +19,22 @@ jobs:
           distribution: 'adopt'
           cache: gradle
 
-      - name: Decode Keystore
+      - name: Decode keystore
         env:
           ENCODED_STRING: ${{ secrets.ANDROID_SIGNING_KEY }}
         run: |
           echo $ENCODED_STRING | base64 -d > keystore.jks
 
-      - name: Assemble Release
+      - name: Assemble release
         run: ./gradlew clean makeReleaseApk
         env:
           ORG_GRADLE_PROJECT_androidSigningKeyPassword: ${{ secrets.ANDROID_SIGNING_KEY_PASSWORD }}
 
-      - name: Cleanup Keystore
+      - name: Cleanup keystore
         if: ${{ always() }}
         run: rm -f keystore.jks
 
-      - name: Publish APKs to Github Release
+      - name: Publish APKs to github release
         uses: softprops/action-gh-release@de2c0eb89ae2a093876385947365aca7b0e5f844
         if: ${{ github.ref_type == 'tag' }}
         with:

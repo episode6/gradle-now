@@ -19,8 +19,10 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
           cache: gradle
-      - name: Sync Docs
+
+      - name: Sync docs
         run: ./gradlew syncDocs
+
       - name: Deploy root docs to website
         if: ${{ github.ref_type == 'tag' }}
         uses: JamesIves/github-pages-deploy-action@132898c54c57c7cc6b80eb3a89968de8fc283505
@@ -30,6 +32,7 @@ jobs:
           FOLDER: build/site
           TARGET_FOLDER: /
           CLEAN: false
+
       - name: Deploy dokka to website
         uses: JamesIves/github-pages-deploy-action@132898c54c57c7cc6b80eb3a89968de8fc283505
         with:
@@ -38,7 +41,8 @@ jobs:
           FOLDER: build/dokka/html
           TARGET_FOLDER: /docs/${{ github.ref_name }}/
           CLEAN: true
-      - name: Publish Release to Github
+
+      - name: Publish release to github
         uses: softprops/action-gh-release@de2c0eb89ae2a093876385947365aca7b0e5f844
         if: ${{ github.ref_type == 'tag' }}
         with:
