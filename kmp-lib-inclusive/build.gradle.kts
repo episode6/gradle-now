@@ -6,7 +6,7 @@ kotlin {
   sourceSets {
     val commonMain by getting {
       dependencies {
-        implementation(libs.kotlinx.coroutines)
+        implementation(libs.bundles.corestack)
       }
     }
     val commonTest by getting {

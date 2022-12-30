@@ -3,7 +3,7 @@ plugins {
 }
 
 dependencies {
-  implementation(libs.kotlinx.coroutines)
+  implementation(libs.bundles.corestack)
 
   testImplementation(project(":test-support"))
 }
