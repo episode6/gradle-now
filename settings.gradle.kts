@@ -30,6 +30,5 @@ include(
   ":kmp-lib-exclusive",
   ":kmp-lib-exclusive-deployable",
 //  ":desktop-app",
-  ":test-support-kmp",
-  ":test-support-jvm",
+  ":test-support",
 )

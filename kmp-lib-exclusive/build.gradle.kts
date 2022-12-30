@@ -11,12 +11,7 @@ kotlin {
     }
     val commonTest by getting {
       dependencies {
-        implementation(project(":test-support-kmp"))
-      }
-    }
-    val jvmTest by getting {
-      dependencies {
-        implementation(project(":test-support-jvm"))
+        implementation(project(":test-support"))
       }
     }
   }
