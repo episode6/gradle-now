@@ -50,7 +50,7 @@ class Config {
     static String generateJekyllConfig(Project project) {
       return """
         theme: jekyll-theme-cayman
-        title: GradleNow
+        title: ${project.rootProject.name}
         description: ${project.rootProject.description}
         version: ${project.version}
         docsDir: https://episode6.github.io/gradle-now/docs/${ if (Maven.isReleaseBuild(project)) "v${project.version}" else "main" }
