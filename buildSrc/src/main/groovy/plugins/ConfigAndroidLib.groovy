@@ -8,7 +8,7 @@ class ConfigAndroidLib implements Plugin<Project> {
   void apply(Project target) {
     target.with {
       plugins.with {
-        apply("com.android.library")
+        apply(libs.plugins.android.lib.get().getPluginId())
         apply(CommonAndroid)
       }
     }

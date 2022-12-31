@@ -9,7 +9,7 @@ class ConfigAndroidApp implements Plugin<Project> {
   void apply(Project target) {
     target.with {
       plugins.with {
-        apply("com.android.application")
+        apply(libs.plugins.android.app.get().getPluginId())
         apply(CommonAndroid)
       }
       android {

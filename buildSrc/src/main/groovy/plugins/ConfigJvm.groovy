@@ -8,7 +8,7 @@ class ConfigJvm implements Plugin<Project> {
   void apply(Project target) {
     target.with {
       plugins.with {
-        apply("org.jetbrains.kotlin.jvm")
+        apply(libs.plugins.jvm.get().getPluginId())
       }
       compileKotlin {
         kotlinOptions {

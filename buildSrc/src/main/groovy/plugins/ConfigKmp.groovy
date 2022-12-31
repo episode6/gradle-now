@@ -8,7 +8,7 @@ class ConfigKmp implements Plugin<Project> {
   void apply(Project target) {
     target.with {
       plugins.with {
-        apply("org.jetbrains.kotlin.multiplatform")
+        apply(libs.plugins.kmp.get().getPluginId())
       }
       def skipTargets = getSkipTargets(project)
 
