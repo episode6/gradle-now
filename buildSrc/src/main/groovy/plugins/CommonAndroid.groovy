@@ -9,7 +9,7 @@ class CommonAndroid implements Plugin<Project> {
   @Override
   void apply(Project target) {
     target.with {
-      plugins.apply("org.jetbrains.kotlin.android")
+      plugins.apply(libs.plugins.kotlin.android.get().getPluginId())
       android {
         compileSdk Config.Android.compileSdk
 

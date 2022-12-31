@@ -8,7 +8,7 @@ class CommonDeployable implements Plugin<Project> {
   @Override void apply(Project target) {
     target.with {
       plugins.with {
-        apply("org.jetbrains.dokka")
+        apply(libs.plugins.dokka.get().getPluginId())
         apply("maven-publish")
         apply("signing")
       }
